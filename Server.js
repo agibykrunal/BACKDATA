@@ -11,8 +11,9 @@ const PORT = process.env.PORT || 3001;
 // ─────────────────────────────────────────────
 app.use(
   cors({
-    origin: "*", // allows any origin (fine for local dev)
-    methods: ["GET", "POST", "DELETE"],
+    origin: "https://frontdata.vercel.app", // Use your specific frontend URL
+    methods: ["GET", "POST", "DELETE", "OPTIONS"], // Added OPTIONS for preflight
+    credentials: true,
   })
 );
 
