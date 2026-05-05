@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3001;
 
 app.use(
   cors({
-    origin: "https://frontdata.vercel.app", // Use your spec
+    origin: "https://frontdata.vercel.app", // Use your sp
     methods: ["GET", "POST", "DELETE", "OPTIONS"], // Added OPTIONS 
     credentials: true,
   })
