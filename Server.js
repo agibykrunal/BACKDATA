@@ -6,9 +6,7 @@ const { Pool } = require("pg");
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// ─────────────────────────────────────────────
-//  CORS — allow frontend to call this API
-// ─────────────────────────────────────────────
+
 app.use(
   cors({
     origin: "https://frontdata.vercel.app", // Use your specific frontend URL
