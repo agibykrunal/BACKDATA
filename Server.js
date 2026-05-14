@@ -18,7 +18,7 @@ app.use(
 app.use(express.json());
 
 // ─────────────────────────────────────────────
-//  PostgreSQL Pool (r
+//  PostgreSQL Pool (
 // ─────────────────────────────────────────────
 const pool = new Pool({
   host: process.env.PG_HOST,
